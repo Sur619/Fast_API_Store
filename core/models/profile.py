@@ -6,9 +6,9 @@ from .mixins import UserRelationsMixins
 
 
 class Profile(UserRelationsMixins, Base):
-    _user_id_unique: bool = True
-    _user_back_population: str = "profile"
+    _user_id_unique = True
+    _user_back_population = "profile"
 
-    first_name: Mapped[str] = mapped_column(String(40))
-    last_name: Mapped[str] = mapped_column(String(40))
+    first_name: Mapped[str | None] = mapped_column(String(40))
+    last_name: Mapped[str | None] = mapped_column(String(40))
     bio: Mapped[str | None]
