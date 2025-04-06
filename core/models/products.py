@@ -7,5 +7,5 @@ class Product(Base):
     __tablename__ = 'products'
 
     name: Mapped[str]
-    price: Mapped[float]
     description: Mapped[str]
+    price: Mapped[int]

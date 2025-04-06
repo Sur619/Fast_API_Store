@@ -5,7 +5,7 @@ import uvicorn
 
 from api_v1.products.views import router as router_v1
 from core.config import settings
-from user.route import user_router
+from users.views import user_router
 
 # @asynccontextmanager
 # async def lifespan(app: FastAPI):
